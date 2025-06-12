@@ -3,10 +3,6 @@
 
 # Hogwarts
 
-<!-- badges: start -->
-
-<!-- badges: end -->
-
 I have created the “Hogwarts” package to learn how to develop an R
 package from scratch. It is a fun package that has two simple functions
 `letter()` and, `sorting_hat()` . As you insert your name as an
@@ -20,7 +16,8 @@ or, Hufflepuff.
 You can install the development version of Hogwarts like so:
 
 ``` r
-install.packages("Hogwarts")
+install.packages("remotes")  # or devtools
+remotes::install_github("MubarikaChowdhury/Hogwarts")
 ```
 
 ## Example
@@ -35,12 +32,12 @@ Example of using function `letter()`
 
 ``` r
 letter(name = "Mubarika")
-#> [1] "Dear Mubarika , We are please to inform you that you have been accepted at Hogwarts School of Witchcraft and Wizardry!"
+#> [1] "Dear Mubarika , We are sorry to infrom you that you have not been accepted at Hogwarts School of Witchcraft and Wizardry!"
 ```
 
 Example of using function `sorting_hat()`
 
 ``` r
 sorting_hat(name = "Mubarika")
-#> [1] "Hello, Mubarika , I know just where to put you,  Ravenclaw !!"
+#> [1] "Hello, Mubarika , I know just where to put you,  Griffindor !!"
 ```
