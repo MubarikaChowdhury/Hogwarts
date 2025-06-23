@@ -9,13 +9,13 @@
 #'
 #' @examples
 #'
-#' letter(name = "Mubarika")
+#' check_admission_status(name = "Mubarika")
 
-letter <- function(name){
-  decision <- c("We are please to inform you that you have been accepted",
-                "We are sorry to infrom you that you have not been accepted")
+check_admission_status <- function(name){
+  decision <- c(" We are please to inform you that you have been accepted",
+                " We are sorry to infrom you that you have not been accepted")
   sam <- sample(decision, 1, replace = TRUE)
-  msg <-  print(paste("Dear", name, ",", sam,
-                      "at Hogwarts School of Witchcraft and Wizardry!"))
+  msg <-  print(paste0("Dear ", name, ",", sam,
+                      " at Hogwarts School of Witchcraft and Wizardry!"))
 }
 

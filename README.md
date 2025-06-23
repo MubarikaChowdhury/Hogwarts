@@ -5,11 +5,11 @@
 
 I have created the “Hogwarts” package to learn how to develop an R
 package from scratch. It is a fun package that has two simple functions
-`letter()` and, `sorting_hat()` . As you insert your name as an
-argument, the function`letter()` gives you the decision whether you were
-admitted to the Hogwarts or not and `sorting_hat()` gives you the
-decision of which house you belong to; Griffindor, Slytherin, Ravenclaw
-or, Hufflepuff.
+`check_admission_status()` and, `sort_into_house()` . As you insert your
+name as an argument, the function`check_admission_status()` gives you
+the decision whether you were admitted to the Hogwarts or not and
+`sort_into_house()` gives you the decision of which house you belong to;
+Griffindor, Slytherin, Ravenclaw or, Hufflepuff.
 
 ## Installation
 
@@ -28,16 +28,16 @@ This is a basic example
 library(Hogwarts)
 ```
 
-Example of using function `letter()`
+Example of using function `check_admission_status()`
 
 ``` r
-letter(name = "Mubarika")
-#> [1] "Dear Mubarika , We are sorry to infrom you that you have not been accepted at Hogwarts School of Witchcraft and Wizardry!"
+check_admission_status(name = "Mubarika")
+#> [1] "Dear Mubarika, We are please to inform you that you have been accepted at Hogwarts School of Witchcraft and Wizardry!"
 ```
 
-Example of using function `sorting_hat()`
+Example of using function `sort_into_house()`
 
 ``` r
-sorting_hat(name = "Mubarika")
-#> [1] "Hello, Mubarika , I know just where to put you,  Griffindor !!"
+sort_into_house(name = "Mubarika")
+#> [1] "Hello, Mubarika, I know just where to put you, Hufflepuff!!"
 ```

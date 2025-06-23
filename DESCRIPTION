@@ -1,10 +1,10 @@
 Package: Hogwarts
-Title: Sorting new students into four different houses.
-Version: 0.0.0.9000
+Title: Sorting new students into four different houses
+Version: 0.0.0.9001
 Authors@R: 
     person("Mubarika", "Chowdhury", , "schow034@fiu.edu", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+           comment = c(ORCID = "0000-0002-2690-8338"))
+Description: It is a fun package that has two simple functions `check_admission_status` and, `sort_into_house` . As you insert your name as anargument, the function`check_admission_status` gives you the decision whether you were admitted to the Hogwarts or not and `sort_into_house` gives you the decision of which house you belong to; Griffindor, Slytherin, Ravenclaw or, Hufflepuff.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)

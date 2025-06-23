@@ -14,12 +14,12 @@
 #'
 #' @examples
 #'
-#' sorting_hat(name = "Mubarika")
+#' sort_into_house(name = "Mubarika")
 
-sorting_hat <- function(name){
+sort_into_house <- function(name){
   house <- c("Griffindor", "Slytherin", "Ravenclaw", "Hufflepuff")
   sam <- sample(house, 1, replace = TRUE)
-  msg <-  print(paste("Hello,", name, ", I know just where to put you,",sam, "!!"))
+  msg <-  print(paste0("Hello, ", name, ", I know just where to put you, ",sam, "!!"))
 }
 
 
